@@ -2,11 +2,11 @@ using MvvmCross.Core.ViewModels;
 
 namespace ContentTransitions.Core.ViewModels
 {
-    public class FirstViewModel : MvxViewModel
+    public class SecondViewModel : MvxViewModel
     {
        public IMvxCommand ButtonClick { get; set; }
 
-        public FirstViewModel()
+        public SecondViewModel()
         {
             ButtonClick = new MvxCommand(buttonClicked);
         }

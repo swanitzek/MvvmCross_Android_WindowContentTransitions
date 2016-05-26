@@ -1,16 +1,17 @@
 using Android.App;
 using Android.OS;
+using ContentTransitions.Core.ViewModels;
 using MvvmCross.Droid.Views;
 
 namespace ContentTransitions.Droid.Views
 {
-    [Activity(Label = "View for FirstViewModel", Theme="@style/AppTheme")]
-    public class FirstView : MvxActivity
+    [Activity(Theme="@style/AppTheme")]
+    public class SecondView : MvxActivity<SecondViewModel>
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.FirstView);
+            SetContentView(Resource.Layout.SecondView);
         }
     }
 }
